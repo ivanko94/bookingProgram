@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.wifi.kokanovic.bookingapp.FindReservationController">
+   <children>
+      <VBox layoutX="207.0" layoutY="100.0" prefHeight="399.0" prefWidth="230.0" spacing="10.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="206.60000000000002" AnchorPane.topAnchor="100.0">
+         <children>
+            <Label text="reservation ID:">
+               <VBox.margin>
+                  <Insets bottom="-10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="byResId" prefHeight="26.0" prefWidth="130.0">
+               <VBox.margin>
+                  <Insets right="120.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="reservation name:">
+               <VBox.margin>
+                  <Insets bottom="-10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="byResName" />
+            <Label prefHeight="18.0" prefWidth="125.0" text="check-in:">
+               <VBox.margin>
+                  <Insets bottom="-10.0" />
+               </VBox.margin>
+            </Label>
+            <DatePicker fx:id="byCheckIn" prefHeight="26.0" prefWidth="110.0">
+               <VBox.margin>
+                  <Insets right="120.0" />
+               </VBox.margin>
+            </DatePicker>
+            <Label prefHeight="18.0" prefWidth="125.0" text="check-out:">
+               <VBox.margin>
+                  <Insets bottom="-10.0" />
+               </VBox.margin>
+            </Label>
+            <DatePicker fx:id="byCheckOut" prefHeight="26.0" prefWidth="109.0">
+               <VBox.margin>
+                  <Insets right="120.0" />
+               </VBox.margin>
+            </DatePicker>
+            <Button fx:id="showAllResButton" mnemonicParsing="false" onAction="#showAllResButtonClicked" prefHeight="26.0" prefWidth="134.0" text="Show all reservations">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Button>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <Label alignment="CENTER" layoutX="53.0" layoutY="25.0" prefHeight="49.0" prefWidth="544.0" text="Find reservation by" AnchorPane.bottomAnchor="435.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="364.0" layoutY="486.0" prefHeight="37.0" prefWidth="230.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="364.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="486.0">
+         <buttons>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#backClicked" text="Back" />
+            <Button fx:id="next" mnemonicParsing="false" onAction="#nextClicked" text="Next" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

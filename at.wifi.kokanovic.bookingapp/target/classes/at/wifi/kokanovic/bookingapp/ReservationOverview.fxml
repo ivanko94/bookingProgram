@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.wifi.kokanovic.bookingapp.ReservationOverviewController">
+   <children>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="14.0" prefHeight="43.0" prefWidth="793.0" text="Reservation overview" AnchorPane.bottomAnchor="550.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="679.0" layoutY="541.0" prefHeight="62.0" prefWidth="200.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="679.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="541.0" />
+      <TableView fx:id="tableView" layoutX="5.0" layoutY="70.0" prefHeight="393.0" prefWidth="883.0" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="70.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="61.60003662109375" text="ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="179.20001220703125" text="Name" />
+            <TableColumn fx:id="checkInColumn" prefWidth="105.5999755859375" text="Check-in" />
+            <TableColumn fx:id="checkOutColumn" prefWidth="95.20001220703125" text="Check-out" />
+            <TableColumn fx:id="roomColumn" prefWidth="69.5999755859375" text="Room" />
+            <TableColumn fx:id="guestsColumn" prefWidth="252.60003662109375" text="Guests" />
+         </columns>
+      </TableView>
+      <HBox layoutX="5.0" layoutY="494.0" prefHeight="47.0" prefWidth="883.0" spacing="30.0" AnchorPane.bottomAnchor="77.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="494.0">
+         <children>
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteClicked" prefWidth="100.0" text="Delete">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></Button>
+            <Button fx:id="addGuestToResButton" mnemonicParsing="false" onAction="#addGuestToResButtonClicked" prefHeight="26.0" prefWidth="176.0" text="Add guest to the reservation" />
+         </children>
+      </HBox>
+      <ButtonBar layoutX="302.0" layoutY="564.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="302.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="564.0">
+         <buttons>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#backClicked" text="Back" />
+            <Button fx:id="finish" mnemonicParsing="false" onAction="#finishClicked" text="Finish" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

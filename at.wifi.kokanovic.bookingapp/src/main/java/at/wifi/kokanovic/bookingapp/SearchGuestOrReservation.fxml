@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.wifi.kokanovic.bookingapp.SearchGuestOrReservationController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="157.0" layoutY="121.0" prefHeight="159.0" prefWidth="216.0" spacing="20.0" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="157.0" AnchorPane.rightAnchor="156.0" AnchorPane.topAnchor="121.0">
+         <children>
+            <Button fx:id="findReservationButton" mnemonicParsing="false" onAction="#findReservationButtonClicked" prefHeight="40.0" prefWidth="150.0" text="Find reservation">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="findGuestButton" mnemonicParsing="false" onAction="#findGuestButtonClicked" prefHeight="40.0" prefWidth="150.0" text="Find guest" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="80.0" prefHeight="46.0" prefWidth="490.0" text="Please choose one of the following options:" textAlignment="CENTER" AnchorPane.bottomAnchor="273.6" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="18.600000000000023" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="332.0" layoutY="348.0" prefHeight="38.0" prefWidth="176.0">
+         <buttons>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#backClicked" text="Back" />
+         </buttons>
+      </ButtonBar>
+      <Label alignment="CENTER" layoutX="141.0" layoutY="23.0" prefHeight="50.0" prefWidth="248.0" text="Search">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

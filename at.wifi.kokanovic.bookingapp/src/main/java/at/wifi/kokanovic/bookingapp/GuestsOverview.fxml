@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.wifi.kokanovic.bookingapp.GuestOverviewController">
+   <children>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="14.0" prefHeight="43.0" prefWidth="793.0" text="Guests overview" AnchorPane.bottomAnchor="550.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="679.0" layoutY="541.0" prefHeight="62.0" prefWidth="200.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="679.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="541.0">
+         <buttons>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#backClicked" text="Back" />
+            <Button fx:id="finish" mnemonicParsing="false" onAction="#finishClicked" text="Finish" />
+         </buttons>
+      </ButtonBar>
+      <TableView fx:id="tableView" layoutX="5.0" layoutY="70.0" prefHeight="393.0" prefWidth="883.0" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="70.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="44.0000319480896" text="ID" />
+          <TableColumn fx:id="firstNameColumn" prefWidth="87.1999740600586" text="First name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="94.39999389648438" text="Last name" />
+            <TableColumn fx:id="dateOfBirthColumn" prefWidth="84.79998779296875" text="Date of birth" />
+            <TableColumn fx:id="genderColumn" prefWidth="52.0" text="Gender" />
+            <TableColumn fx:id="idCardNrColumn" prefWidth="108.79998779296875" text="ID-card nr." />
+            <TableColumn fx:id="nationalityColumn" prefWidth="82.40005493164062" text="Nationality" />
+            <TableColumn fx:id="streetColumn" prefWidth="126.39996337890625" text="Street" />
+            <TableColumn fx:id="cityColumn" prefWidth="67.20001220703125" text="City" />
+            <TableColumn fx:id="zipColumn" prefWidth="59.199951171875" text="ZIP" />
+            <TableColumn fx:id="countryColumn" prefWidth="73.4000244140625" text="Country" />
+        </columns>
+      </TableView>
+      <HBox layoutX="5.0" layoutY="494.0" prefHeight="47.0" prefWidth="883.0" spacing="50.0" AnchorPane.bottomAnchor="77.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="494.0">
+         <children>
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteClicked" prefWidth="100.0" text="Delete">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
